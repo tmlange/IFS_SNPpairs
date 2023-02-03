@@ -24,8 +24,7 @@ min.snps = 3
 # Choose the maximum number of single SNPs you want to use to create SNP pairs
 max.snps = 20
 
-# Read in the function create_SNPpairs()
-# If the R script create_SNPpairs.R is in the working directory, run the following line
+# Create the function create_SNPpairs()
 create_SNPpairs = function(selectedSNPs, D){
   
   # Combining the single SNPs to SNP pairs
