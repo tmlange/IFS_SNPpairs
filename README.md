@@ -10,3 +10,7 @@ Example of a test data set from a genomic prediction trial to screen rhizomania 
 
 TrainingData.csv:  
 Example of a training data set from a genomic prediction trial to screen rhizomania resistance in sugar beet. 
+
+
+# Licenses
+The software is licensed under the MIT license. The data set is licensed under the Creative Commons Legal Code (CC0 1.0 Universal). For further details see the LICENSES file. 
