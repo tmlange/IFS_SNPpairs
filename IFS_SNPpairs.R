@@ -11,9 +11,14 @@
 library("ranger")
 library("Boruta")
 
-# Read in the provided example data or your own training and test data
-Training = read.table("TrainingData.csv", sep=";", header=T)
-Test = read.table("TestData.csv", sep=";", header=T)
+# Read in the provided example data  
+D = read.table("TrialData.csv", sep=";", header=TRUE, row.names = "line")
+
+# Create training and test data
+set.seed(123)
+TrainingIndividuals <- sample(c(1:nrow(D)), round(nrow(D)*0.8, 0))
+Training <- D[TrainingIndividuals,]
+Test <- D[-TrainingIndividuals,]
 
 # Choose the number of threads that you want to use
 thread.number = 60
