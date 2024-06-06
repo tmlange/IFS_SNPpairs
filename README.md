@@ -1,15 +1,20 @@
 # IFS_SNPpairs
-Incremental feature selection (IFS) of SNP pairs by combining only the best single SNPs to pairs based on the variable importance estimates from Boruta. 
+Incremental feature selection (IFS) of SNP pairs by combining only the single SNPs with the highest variable importance to pairs. 
 
 IFS_SNPpairs.R:  
 An R script that performs IFS with the SNP pairs created with the best SNPs based on the variable importance estimates from Boruta.
-The R script requires a separated test and training data set which both need to provide phenotypic values in the first column as well as genomic data in the following columns in form of 0, 1, 2 coding. 
+The R script produces a training data set containing 80% of the individuals and a test data set containing the remaining individuals. 
+Furthermore, the data set needs to provide phenotypic values in the first column as well as genomic data in the following columns in form of 0, 1, 2 coding. 
+The genotype of the SNP pairs is defined as the product of the single SNPs used in the SNP pair. 
 
-TestData.csv:  
-Example of a test data set from a genomic prediction trial to screen rhizomania resistance in sugar beet. 
+TrialData.csv:  
+Example data set from a genomic prediction trial to screen rhizomania resistance in sugar beet where 156 genotypes were genotyped with 9,127 SNPs. 
+The first column contains the IDs of the genotypes used the trial. 155 genotypes were S2 lines, resistant at the two known resistance clusters Rz1 and Rz2. 
+The population was extended with a genotype which was resistant at Rz1 but susceptible at Rz2 (in the data set represented as Control_susceptibleRz2). 
+The second column contains the phenotypic data as relative virus concentrations in the roots of plants that were cultivated for ten weeks in soil naturally infested with the Beet necrotic yellow vein virus, pathotype P.
+Measurement of the relative virus concentration followed the protocol described in Lange et al. (2022) "Non-linear transformation of enzyme-linked immunosorbent assay (ELISA) measurements allows usage of linear models for data analysis" using the R script TransformELISA.R available at https://github.com/tmlange/TransformELISA. 
+The following 9,127 columns contain SNP data. Each SNP was recoded as 0 (homozygous major allele), 1 (heterozygous), and 2 (homozygous minor allele). 
 
-TrainingData.csv:  
-Example of a training data set from a genomic prediction trial to screen rhizomania resistance in sugar beet. 
 
 # Requirements
 R 4.1.2 or higher
