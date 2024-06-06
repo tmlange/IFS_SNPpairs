@@ -9,7 +9,6 @@ The genotype of the SNP pairs is defined as the product of the single SNPs used 
 
 TrialData.csv:  
 Example data set from a genomic prediction trial to screen rhizomania resistance in sugar beet where 156 genotypes were genotyped with 9,127 SNPs. 
-
 The first column contains the IDs of the genotypes used the trial. 155 genotypes were S2 lines, resistant at the two known resistance clusters Rz1 and Rz2. 
 The population was extended with a genotype which was resistant at Rz1 but susceptible at Rz2 (in the data set represented as Control_susceptibleRz2). 
 The second column contains the phenotypic data as relative virus concentrations in the roots of plants that were cultivated for ten weeks in soil naturally infested with the Beet necrotic yellow vein virus, pathotype P.
