@@ -1,7 +1,23 @@
-If you use this software, please cite it as below:
-
-DOI: https://doi.org/10.12688/f1000research.131134.1
-
-APA: Lange, T. M., Heinrich, F., Kopisch-Obuch, F., Keunecke, H., Gültas, M., & Schmitt, A. O. (2023). Improving genomic prediction of rhizomania resistance in sugar beet (Beta vulgaris L.) by implementing epistatic effects and feature selection. F1000Research, 12(280), 280.
-
-BibTeX: @article{, title={Improving genomic prediction of rhizomania resistance in sugar beet (Beta vulgaris L.) by implementing epistatic effects and feature selection}, author={Lange, Thomas M. and Heinrich, Felix and Kopisch-Obuch, Friedrich and Keunecke, Harald and G{"u}ltas, Mehmet and Schmitt, Armin O.}, journal={F1000Research}, volume={12}, number={280}, pages={280}, year={2023}, publisher={F1000 Research Limited} }
+cff-version: 1.2
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Lange
+    given-names: Thomas M. 
+    orcid: https://orcid.org/0000-0003-4351-7950
+  - family-names: Heinrich
+    given-names: Felix 
+    orcid: https://orcid.org/0000-0002-6093-8522
+  - family-names: Kopisch-Obuch
+    given-names: Friedrich 
+  - family-names: Keunecke
+    given-names: Harald 
+  - family-names: Gültas
+    given-names: Mehmet 
+  - family-names: Schmitt
+    given-names: Armin O. 
+title: "Improving genomic prediction of rhizomania resistance in sugar beet (Beta vulgaris L.) by implementing epistatic effects and feature selection"
+version: 1.2
+identifiers:
+  - type: doi
+    value: https://doi.org/10.12688/f1000research.131134.1
+date-released: 2023-03-23
